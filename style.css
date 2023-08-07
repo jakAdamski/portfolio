@@ -3,18 +3,22 @@ body{
     margin: 0;
     padding: 0;
     background-color: #202123; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
 }
 #container{
-    height:100vh;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 4fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 4fr 2fr 8fr 8fr;
     grid-template-areas: 
     'h h h h'
     'm m m m'
-    'p1 p1 p2 p2'
-    'p3 p3 p4 p4' ;
+    'a a a a'
+    'q q q q'
+    'pr1 pr1 pr2 pr2'
+    'pr3 pr3 pr4 pr4' ;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 #header{
     grid-area: h;
@@ -37,7 +41,7 @@ body{
     width:100%;
     list-style: none;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 ul > li > a {
     text-decoration: none;
@@ -47,17 +51,119 @@ ul > li > a {
 
 #main{
     grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3rem;
 }
+#main h1{
+    display: inline-flex;
+    text-align: center;
+    color:#d1d3d5;
+    font-size: 5rem;
+    margin:0;
+    font-family: 'Pompiere', cursive;}
+
+#about{
+    grid-area:a;
+    display: flex;
+    font-size: 1.5rem;
+}
+.about{
+    color:#d1d3d5;
+
+
+}
+#left{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#left p1{
+    margin-right: 16rem;
+}
+#left p2{
+    margin-right: 12rem;
+}
+#left p3{
+    margin-right: 8rem;
+}
+#left p4{
+    margin-right: 2rem;
+}
+#right{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#right p1{
+    margin-right:16rem;
+}
+#right p2{
+    margin-right: 12rem;
+}
+#right p3{
+margin-right: 8rem;
+}
+#right p4{
+    margin-left: 4rem;
+}
+#quote{
+    grid-area: q;
+    
+}
+#quote h2{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: #d1d3d5;
+    font-weight: 400;
+}
+
+
+
 #project1{
-    grid-area: p1;
+    grid-area: pr1;
+    background-color: red;
+    margin-left: 2rem;
 }
+
+
+
+
 #project2{
-    grid-area: p2;
+    grid-area: pr2;
+    background-color: blue;
+    margin-right: 2rem;
 }
+
+
+
+
+
+
 #project3{
-    grid-area: p3;
+    grid-area: pr3;
+    background-color: purple;
+    margin-left:2rem;
+
 }
+
+
+
+
+
 #project4{
-    grid-area: p4;
+    grid-area: pr4;
+    background-color: green;
+    margin-right:2rem;
 }
 
