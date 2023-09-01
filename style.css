@@ -1,3 +1,4 @@
+
 body{
     box-sizing: border-box;
     margin: 0;
@@ -125,7 +126,7 @@ ul > li > a {
 margin-right: 8rem;
 }
 #right p4{
-    margin-left: 4rem;
+    margin-left: 1.8rem;
 }
 #quote{
     grid-area: q; 
@@ -256,9 +257,17 @@ margin-top: 0.8rem ;
     font-size: 0.7rem;
     transition: .4s ease-out;
 }
+.email_button{
+    color:#d1d3d5;
+    text-decoration: none;
+}
 #trademark{
     grid-area:t;
     text-align: center;
     font-size:.7rem;
     margin-bottom:4px;
+}
+.linkedin_link{
+    color: #d1d3d5;
+    text-decoration: none;
 }
